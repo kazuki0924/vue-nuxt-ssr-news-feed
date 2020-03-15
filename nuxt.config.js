@@ -26,7 +26,7 @@ export default {
   /*
    ** Customize the progress-bar color
    */
-  loading: { color: "#fff" },
+  loading: { color: "#9ccc65", height: "10px" },
   /*
    ** Global CSS
    */
@@ -56,7 +56,14 @@ export default {
    ** Axios module configuration
    ** See https://axios.nuxtjs.org/options
    */
-  axios: {},
+  axios: {
+    credentials: true
+  },
+
+  env: {
+    NEWS_API_KEY: "c34aaf80b8af4699bcb051fc8af48b44"
+  },
+
   /*
    ** Build configuration
    */
